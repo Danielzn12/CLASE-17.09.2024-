@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grilla de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Grilla de Productos</h1>
+    </header>
+    <main>
+        <section>
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Producto 1</td>
+                        <td>Descripción del Producto 1</td>
+                        <td>$10</td>
+                        <td><button onclick="showImage('images/image1.jpg')">Ver Imagen</button></td>
+                    </tr>
+                    <tr>
+                        <td>Producto 2</td>
+                        <td>Descripción del Producto 2</td>
+                        <td>$20</td>
+                        <td><button onclick="showImage('images/image2.jpg')">Ver Imagen</button></td>
+                    </tr>
+                    <tr>
+                        <td>Producto 3</td>
+                        <td>Descripción del Producto 3</td>
+                        <td>$30</td>
+                        <td><button onclick="showImage('images/image3.jpg')">Ver Imagen</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="image-viewer" id="image-viewer">
+            <div class="image-container">
+                <span class="close">&times;</span>
+                <img id="large-image" src="" alt="Imagen del Producto">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Grilla de Productos. Todos los derechos reservados.</p>
+    </footer>
+   
+</body>
+</html>

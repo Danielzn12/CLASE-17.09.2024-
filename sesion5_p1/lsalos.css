@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.ancestor{
+    border: 3px solid #4CAF50;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: white;
+    font-size: 18px;
+    color: #333;
+    position: relative;
+    overflow: hidden;
+    animation: slideIn 2s ease-out;
+}
+
+.parent{
+    border: 3px dashed #4CAF50;
+    padding: 15px;
+    margin: 15px 0;
+    background-color: #e0ffe0;
+    font-size: 16px;
+    position: relative;
+}
+
+
+.parent::before{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: #4CAF50;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+
+.child{
+    border: 3px dotted #4CAF50;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #d0ffd0;
+    font-size: 14px;
+}
+
+
+.child .highlight{
+    color: #ff0000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.grandchild{
+    border: 3px double #4CAF50;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #c0ffc0;
+    font-size: 12px;
+    transform: rotate(-1deg);
+    transition: transform 0.3s ease;
+}
+
+
+.grandchild:hover{
+    transform: rotate(1deg);
+}
+
